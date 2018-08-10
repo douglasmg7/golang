@@ -1,0 +1,5 @@
+h1 Editing {{.Title}}
+form(action='/save/{{.Title}}' method='post')
+  div
+    textarea(name="body" rows="20" cols="80") {{printf "%s" .Body}}
+    
